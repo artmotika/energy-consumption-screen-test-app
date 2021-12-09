@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/TextChangeColor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBgColor"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/change_color_text"
+        android:layout_width="236dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="10sp"
+        android:fontFamily="sans-serif"
+        android:text="Set the screen color"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonSetColorRedAndGreen"
+        android:layout_width="90sp"
+        android:layout_height="90sp"
+        android:layout_marginStart="4sp"
+        android:layout_marginTop="350sp"
+        android:backgroundTint="@color/yellow"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonSetColorBlue"
+        android:layout_width="90sp"
+        android:layout_height="90sp"
+        android:layout_marginTop="200sp"
+        android:layout_marginEnd="4sp"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="@color/blue"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonSetColorGreen"
+        app:layout_constraintStart_toEndOf="@+id/buttonSetColorGreen"
+        app:layout_constraintTop_toTopOf="@+id/buttonSetColorGreen"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonSetColorGreenAndBlue"
+        android:layout_width="90sp"
+        android:layout_height="90sp"
+        android:backgroundTint="@color/lightblue"
+        android:layout_marginTop="350sp"
+        android:layout_marginEnd="4sp"
+        android:layout_alignParentRight="true"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonSetColorRedAndBlue"
+        app:layout_constraintStart_toEndOf="@+id/buttonSetColorRedAndBlue"
+        app:layout_constraintTop_toTopOf="@+id/buttonSetColorRedAndBlue"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonSetColorRedAndBlue"
+        android:layout_width="90sp"
+        android:layout_height="90sp"
+        android:backgroundTint="@color/blueandred"
+        android:layout_marginTop="350sp"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonSetColorRedAndGreen"
+        app:layout_constraintStart_toEndOf="@+id/buttonSetColorRedAndGreen"
+        app:layout_constraintTop_toTopOf="@+id/buttonSetColorRedAndGreen"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonSetColorBlack"
+        android:layout_width="90sp"
+        android:layout_height="90sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50sp"
+        android:backgroundTint="@color/black"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonSetColorRed"
+        android:layout_width="90sp"
+        android:layout_height="90sp"
+        android:layout_marginStart="4sp"
+        android:layout_marginTop="200sp"
+        android:backgroundTint="@color/red"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonSetColorGreen"
+        android:layout_width="90sp"
+        android:layout_height="90sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200sp"
+        android:backgroundTint="@color/green"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonSetColorRed"
+        app:layout_constraintStart_toEndOf="@+id/buttonSetColorRed"
+        app:layout_constraintTop_toTopOf="@+id/buttonSetColorRed"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonSetColorWhite"
+        android:layout_width="90sp"
+        android:layout_height="90sp"
+        android:layout_marginStart="4sp"
+        android:layout_marginTop="50sp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonSetColorBlack"
+        app:layout_constraintStart_toEndOf="@+id/buttonSetColorBlack"
+        app:layout_constraintTop_toTopOf="@+id/buttonSetColorBlack"
+        tools:ignore="MissingConstraints" />
+    <SeekBar
+        android:id="@+id/seekBarGray"
+        android:layout_width="350sp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="500sp"
+        android:max="255"
+        android:progress="17"
+        />
+    <TextView
+        android:id="@+id/seekBarGrayText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="470sp"
+        android:layout_marginStart="10sp"
+        android:textSize="20sp"
+        android:text="17 of 255"
+        />
+    <Button
+        android:id="@+id/buttonSetColorGray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="530sp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:text="set Gray Color"
+         />
+
+</RelativeLayout>
